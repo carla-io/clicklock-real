@@ -68,9 +68,9 @@
           <div class="menu-inner-shadow"></div>
 
           <ul class="menu-inner py-1">
-            <!-- Dashboards -->
-            <li class="menu-item">
-              <a href="index.html" class="menu-link">
+            <!-- Dashboard -->
+            <li class="menu-item active">
+              <a href="{{ route('admindashboard') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Dashboards">Dashboard</div>
                
@@ -82,13 +82,13 @@
             </li>
             
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="{{ route('allproduct') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="Dashboards">All Products</div>
               </a>
 
               <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="{{ route('addproduct') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="Dashboards">Add Products</div>
               </a>
@@ -100,27 +100,46 @@
             </li>
 
             <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="{{ route('allcategory') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="Dashboards">All Categories</div>
               </a>
 
               <li class="menu-item">
-              <a href="index.html" class="menu-link">
+              <a href="{{ route('addcategory') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="Dashboards">Add Categories</div>
               </a>
              
 
-            <!-- Components -->
-            <li class="menu-header small text-uppercase"><span class="menu-header-text">Customers</span></li>
-            <!-- Cards -->
+            <!-- Customers & orders -->
+            <li class="menu-header small text-uppercase"><span class="menu-header-text">Customers  &amp; Orders</span></li>
+            
             <li class="menu-item">
-              <a href="cards-basic.html" class="menu-link">
+              <a href="{{ route('customer') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-collection"></i>
                 <div data-i18n="Basic">Customers</div>
               </a>
             </li>
+            
+           
+            <li class="menu-item">
+              <a href="{{ route('order') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-collection"></i>
+                <div data-i18n="Basic">Orders</div>
+              </a>
+            </li>
+
+             <!-- Feedbacks  -->
+             <li class="menu-header small text-uppercase"><span class="menu-header-text">Feedbacks  &amp; Suggestions</span></li>
+            
+            <li class="menu-item">
+              <a href="{{ route('feedback') }}" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-detail"></i>
+                <div data-i18n="Basic">Feedbacks</div>
+              </a>
+            </li>
+
           </ul>
         </aside>
         <!-- / Menu -->
